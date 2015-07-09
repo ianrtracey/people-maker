@@ -71,5 +71,14 @@ puts "done -- wrote data/rels.csv"
 
 
 end_time = Time.now
-puts "Time Elapsed: #{end_time - begin_time}."
+puts "Time Elapsed For Generation: #{end_time - begin_time}."
+
+puts "Importing to Neo4j..."
+success = system("sh import-mvn.sh")
+if success
+	puts "Import Successful"
+end
+puts "done"
+
+puts "Enjoy your Neo4j dataset."
 
