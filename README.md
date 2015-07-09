@@ -4,8 +4,9 @@ A generator to help developers build sample databases for their graph databases.
 (Currently being implemented for the Neo4j graph database importer)
 
 ## Installation
-1. gem install bundler (if not already installed)
-2. bundle install
+1. git clone https://github.com/ianrtracey/people-maker.git 
+2. gem install bundler (if not already installed)
+3. bundle install
 	
 ## Usage
 * ruby run.rb generate *(generates sample data)*
