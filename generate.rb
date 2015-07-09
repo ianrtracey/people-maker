@@ -1,18 +1,7 @@
-require 'rubygems'
-require 'json'
-require 'FFaker'
-require 'set'
-require 'benchmark'
-require 'csv'
-require 'ruby-progressbar'
-require './userid'
-require './reporting_chain'
-require './helpers'
 
+class Generate
 
-# Set the number of people to what you want for your database
-DATASETSIZE = 100_000
-
+def initialize
 
 begin_time = Time.now
 
@@ -72,13 +61,6 @@ puts "done -- wrote data/rels.csv"
 
 end_time = Time.now
 puts "Time Elapsed For Generation: #{end_time - begin_time}."
-
-puts "Importing to Neo4j..."
-success = system("sh import-mvn.sh")
-if success
-	puts "Import Successful"
 end
-puts "done"
 
-puts "Enjoy your Neo4j dataset."
-
+end

@@ -1,0 +1,14 @@
+Java HotSpot(TM) 64-Bit Server VM (25.45-b02) for bsd-amd64 JRE (1.8.0_45-b14), built on Apr 10 2015 10:46:38 by "java_re" with gcc 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.11.00)
+Memory: 4k page, physical 16777216k(1294804k free)
+
+/proc/meminfo:
+
+CommandLine flags: -XX:CMSFullGCsBeforeCompaction=1 -XX:CMSIncrementalDutyCycle=10 -XX:+CMSIncrementalMode -XX:+CMSIncrementalPacing -XX:+CMSParallelRemarkEnabled -XX:ConcGCThreads=4 -XX:InitialHeapSize=53687091200 -XX:MaxHeapSize=53687091200 -XX:MaxNewSize=3221225472 -XX:NewSize=3221225472 -XX:OldPLABSize=16 -XX:+PrintGC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -XX:SurvivorRatio=2 -XX:+UseConcMarkSweepGC -XX:+UseParNewGC 
+2015-06-16T10:24:26.052+0700: 5.123: [Full GC (System.gc()) 5.124: [CMS: 0K->54126K(49283072K), 0.5392005 secs] 597718K->54126K(51642368K), [Metaspace: 27763K->27763K(28672K)], 0.5437252 secs] [Times: user=0.81 sys=0.19, real=0.54 secs] 
+Heap
+ par new generation   total 2359296K, used 73400K [0x000000011e600000, 0x00000001de600000, 0x00000001de600000)
+  eden space 1572864K,   4% used [0x000000011e600000, 0x0000000122dae1b0, 0x000000017e600000)
+  from space 786432K,   0% used [0x000000017e600000, 0x000000017e600000, 0x00000001ae600000)
+  to   space 786432K,   0% used [0x00000001ae600000, 0x00000001ae600000, 0x00000001de600000)
+ concurrent mark-sweep generation total 49283072K, used 54126K [0x00000001de600000, 0x0000000d9e600000, 0x0000000d9e600000)
+ Metaspace       used 27705K, capacity 28077K, committed 28524K, reserved 28672K
