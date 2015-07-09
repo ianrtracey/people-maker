@@ -16,21 +16,22 @@ generate = ARGV[0]
 import = ARGV[1]
 DATASETSIZE = 100_000
 
-if generate.nil? && import.nil?
-	abort("Please enter a command (either 'generate', 'import' or both)")
+if ARGV.size == 0
+	puts "Please enter a command (either 'generate', 'import' or both)"
 end
 
-if generate != "generate"
-	abort("#{generate} is not a command")
-end
-if import != "import" && !import.nil?
-	abort("#{import} is not a command")
+if ARGV.size > 2
+	puts "Too many arguments"
 end
 
-if !generate.nil?
+if ARGV.size > 0 && !ARGV.include?("generate") || !ARGV.include?("import")
+	puts "invalid command"
+end 
+
+if ARGV.include?("generate")
 	Generate.new
 end
-if !import.nil?
+if ARGV.include?("import")
 	Import.new
 end
 
