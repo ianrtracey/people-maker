@@ -9,9 +9,9 @@ A generator to help developers build sample databases for their graph databases.
 3. bundle install
 	
 ## Usage
-* ruby run.rb generate *(generates sample data)*
-* ruby run.rb import *(imports sample data)*
-* ruby run.rb generate import *(generates and imports sample data)* 
+* **ruby run.rb generate** *(generates sample data)*
+* **ruby run.rb import** *(imports sample data)*
+* **ruby run.rb generate import** *(generates and imports sample data)* 
 
 
 View Full Batch Import Project
